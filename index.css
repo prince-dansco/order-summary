@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {}
+
+#section {
+   background: url('./images/pattern-background-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    padding: 4em 1em;
+    margin-inline: auto;
+
+   
+}
+
+.sub-container{
+    margin: 2em 20em;
+   
+}
+.sub-container img{
+    width: 100%;
+    margin: 0 auto;
+    border-top-left-radius: 12px; 
+    border-top-right-radius:12px ;
+}
+.title {
+    width: 100%;
+    margin: -5px auto;
+    padding: 20px 1px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 5px 0px 9px rgba(250, 251, 252, 0.5);
+    
+    
+
+}
+.title>p{
+    color:  hsl(224, 23%, 55%);
+}
+
+
+.sub-title {
+    display: flex;
+    width: 85%;
+    height: 12vh;
+    align-items: center;
+   justify-content: space-around;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 1em;
+   
+    
+
+}
+.content{
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+.sub-conent{
+    width: 100%;
+    text-align: start;
+}
+.sub-conent>h2{
+font-size: 13px;
+font-weight: 900;
+
+}
+.sub-conent>p{
+    /* font-size: 11px; */
+    color:  hsl(224, 23%, 55%);
+}
+.sub-title>h4{
+    text-decoration: underline;
+    color:  hsl(245, 75%, 52%);
+    /* font-size:11px ; */
+}
+button{
+    background-color: hsl(245, 75%, 52%) ;
+    padding: 17px;
+    color:hsl(225, 100%, 94%) ;
+    width: 85%;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0px 10px 45px hsl(245, 75%, 52%,.5);
+    transition: opacity .2s;
+}
+button:active{
+    opacity: .2s;
+    background-color: hsl(224, 23%, 55%);
+}
+.title>h3{
+    font-weight: 200;
+    color:  hsl(224, 23%, 55%);
+}
+@media screen and (max-width: 1000px){
+    #section{
+        margin: 0;
+        padding:auto;
+      
+    }
+    .sub-container{
+        margin:0;
+        width: 90%;
+        padding: 0;
+        max-width: 500px;
+        align-items: center;
+
+    }
+}
